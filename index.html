@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+
+        <!-- Button to open the background options -->
+        <div class="open_menu">
+        <a id="openMenuButton" class="menu"><img src="assets/videos/images/tools/toolbar.png" ></a>
+        </div>
+
+    <div id="card" class="card">
+        <div class="tools">
+          <div class="circle">
+            <span id="closeMenuButton" class="red box"></span>
+          </div>
+          <h2>Select A Background</h2>
+        </div>
+        <div class="card__content">
+            <div id="backgroundMenu" class="popup-menu">
+                <div class="popup-content">
+                    <div class="background-options">
+                        <div class="background-option" data-background="assets/videos/Bedroom.mp4">
+                            <img src="assets/videos/images/bedroom.png" alt="Bedroom">
+                            <p>Bedroom</p>
+                        </div>
+                        <div class="background-option" data-background="assets/videos/Sunset_Study.mp4">
+                            <img src="assets/videos/images/sunset_study.png" alt="Sunset_Study">
+                            <p>Sunset Study</p>
+                        </div>
+                        <div class="background-option" data-background="assets/videos/Autumn_Garden.mp4">
+                            <img src="assets/videos/images/autumn_garden.png" alt="Autumn_Garden">
+                            <p>Autumn Garden</p>
+                        </div>
+                        <div class="background-option" data-background="assets/videos/Campfire.mp4">
+                            <img src="assets/videos/images/campfire.png" alt="Campfire">
+                            <p>Campfire</p>
+                        </div>
+                        <div class="background-option" data-background="assets/videos/Cozy_Autumn.mp4">
+                            <img src="assets/videos/images/cozy_autumn.png" alt="Cozy_Autumn">
+                            <p>Cozy Autumn</p>
+                        </div>
+                        <div class="background-option" data-background="assets/videos/Empty_Classroom.mp4">
+                            <img src="assets/videos/images/empty_classroom.png" alt="Empty_Classroom">
+                            <p>Empty Classroom</p>
+                        </div>
+                        <div class="background-option" data-background="assets/videos/Flowery_Shore.mp4">
+                            <img src="assets/videos/images/flowery_shore.png" alt="Flowery_Shore">
+                            <p>Flowery Shore</p>
+                        </div>
+                        <div class="background-option" data-background="assets/videos/Grandpas_Cottage.mp4">
+                            <img src="assets/videos/images/grandpas_cottage.png" alt="Grandpas_Cottage">
+                            <p>Grandpas Cottage</p>
+                        </div>
+                        <div class="background-option" data-background="assets/videos/Grandpas_Workshop.mp4">
+                            <img src="assets/videos/images/grandpas_workshop.png" alt="Grandpas_Workshop">
+                            <p>Grandpas Workshop</p>
+                        </div>
+                        <div class="background-option" data-background="assets/videos/Miami_Vibes.mp4">
+                            <img src="assets/videos/images/miami_vibes.png" alt="Miami_Vibes">
+                            <p>Miami Vibes</p>
+                        </div>
+                        <div class="background-option" data-background="assets/videos/Pottery_House.mp4">
+                            <img src="assets/videos/images/pottery_house.png" alt="Pottery_House">
+                            <p>Pottery House</p>
+                        </div>
+                        <div class="background-option" data-background="assets/videos/Sakura.mp4">
+                            <img src="assets/videos/images/sakura.png" alt="Sakura">
+                            <p>Sakura</p>
+                        </div>
+                        <div class="background-option" data-background="assets/videos/Tropical_Beach.mp4">
+                            <img src="assets/videos/images/tropical_beach.png" alt="Tropical_Beach">
+                            <p>Tropical Beach</p>
+                        </div>
+                        <div class="background-option" data-background="assets/videos/Warm_Brew_Kitchen.mp4">
+                            <img src="assets/videos/images/warm_brew_kitchen.png" alt="Warm_Brew_Kitchen">
+                            <p>Warm Brew Kitchen</p>
+                        </div>
+                        <div class="background-option" data-background="assets/videos/Zen_Retreat.mp4">
+                            <img src="assets/videos/images/zen_retreat.png" alt="Zen_Retreat">
+                            <p>Zen Retreat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popup menu with background options -->
+
+    <!-- Background Video -->
+    <video id="backgroundVideo" autoplay loop muted class="background-video" preload="auto">
+        <source src="assets/videos/Sunset_Study.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <audio id="audioPlayer" controls>
+        <source src="69.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+      
+    <!-- Buttons for interactivity -->
+    <button onclick="playNextRandomSong()">Next Random Song</button>
+    <button id="playPauseButton">Play/Pause</button>
+
+    <!-- Content on top of the video -->
+    <div class="content">
+        <h1>Welcome to My Website</h1>
+        <p>Enjoy the calming background video</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
